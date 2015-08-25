@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		F7FC430A1B8D328C00F6E78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC43091B8D328C00F6E78D /* AppDelegate.swift */; };
 		F7FC430D1B8D328C00F6E78D /* ContactsList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7FC430B1B8D328C00F6E78D /* ContactsList.xcdatamodeld */; };
-		F7FC430F1B8D328C00F6E78D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC430E1B8D328C00F6E78D /* ViewController.swift */; };
 		F7FC43121B8D328C00F6E78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FC43101B8D328C00F6E78D /* Main.storyboard */; };
 		F7FC43141B8D328C00F6E78D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FC43131B8D328C00F6E78D /* Images.xcassets */; };
 		F7FC43171B8D328C00F6E78D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FC43151B8D328C00F6E78D /* LaunchScreen.xib */; };
 		F7FC43231B8D328C00F6E78D /* ContactsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC43221B8D328C00F6E78D /* ContactsListTests.swift */; };
 		F7FC432D1B8D339700F6E78D /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC432C1B8D339700F6E78D /* Contacts.swift */; };
+		F7FC432F1B8D355200F6E78D /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC432E1B8D355200F6E78D /* ContactsTableViewController.swift */; };
+		F7FC43311B8D358300F6E78D /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC43301B8D358300F6E78D /* ContactDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		F7FC43081B8D328C00F6E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC43091B8D328C00F6E78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FC430C1B8D328C00F6E78D /* ContactsList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsList.xcdatamodel; sourceTree = "<group>"; };
-		F7FC430E1B8D328C00F6E78D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7FC43111B8D328C00F6E78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7FC43131B8D328C00F6E78D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7FC43161B8D328C00F6E78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		F7FC43211B8D328C00F6E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC43221B8D328C00F6E78D /* ContactsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTests.swift; sourceTree = "<group>"; };
 		F7FC432C1B8D339700F6E78D /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		F7FC432E1B8D355200F6E78D /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		F7FC43301B8D358300F6E78D /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +85,13 @@
 			children = (
 				F7FC432C1B8D339700F6E78D /* Contacts.swift */,
 				F7FC43091B8D328C00F6E78D /* AppDelegate.swift */,
-				F7FC430E1B8D328C00F6E78D /* ViewController.swift */,
 				F7FC43101B8D328C00F6E78D /* Main.storyboard */,
 				F7FC43131B8D328C00F6E78D /* Images.xcassets */,
 				F7FC43151B8D328C00F6E78D /* LaunchScreen.xib */,
 				F7FC430B1B8D328C00F6E78D /* ContactsList.xcdatamodeld */,
 				F7FC43071B8D328C00F6E78D /* Supporting Files */,
+				F7FC432E1B8D355200F6E78D /* ContactsTableViewController.swift */,
+				F7FC43301B8D358300F6E78D /* ContactDetailViewController.swift */,
 			);
 			path = ContactsList;
 			sourceTree = "<group>";
@@ -219,7 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7FC432D1B8D339700F6E78D /* Contacts.swift in Sources */,
-				F7FC430F1B8D328C00F6E78D /* ViewController.swift in Sources */,
+				F7FC43311B8D358300F6E78D /* ContactDetailViewController.swift in Sources */,
+				F7FC432F1B8D355200F6E78D /* ContactsTableViewController.swift in Sources */,
 				F7FC430D1B8D328C00F6E78D /* ContactsList.xcdatamodeld in Sources */,
 				F7FC430A1B8D328C00F6E78D /* AppDelegate.swift in Sources */,
 			);
