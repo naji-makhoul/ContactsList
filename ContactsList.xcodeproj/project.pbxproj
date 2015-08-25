@@ -14,6 +14,7 @@
 		F7FC43141B8D328C00F6E78D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FC43131B8D328C00F6E78D /* Images.xcassets */; };
 		F7FC43171B8D328C00F6E78D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FC43151B8D328C00F6E78D /* LaunchScreen.xib */; };
 		F7FC43231B8D328C00F6E78D /* ContactsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC43221B8D328C00F6E78D /* ContactsListTests.swift */; };
+		F7FC432D1B8D339700F6E78D /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC432C1B8D339700F6E78D /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F7FC431C1B8D328C00F6E78D /* ContactsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC43211B8D328C00F6E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC43221B8D328C00F6E78D /* ContactsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTests.swift; sourceTree = "<group>"; };
+		F7FC432C1B8D339700F6E78D /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		F7FC43061B8D328C00F6E78D /* ContactsList */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC432C1B8D339700F6E78D /* Contacts.swift */,
 				F7FC43091B8D328C00F6E78D /* AppDelegate.swift */,
 				F7FC430E1B8D328C00F6E78D /* ViewController.swift */,
 				F7FC43101B8D328C00F6E78D /* Main.storyboard */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FC432D1B8D339700F6E78D /* Contacts.swift in Sources */,
 				F7FC430F1B8D328C00F6E78D /* ViewController.swift in Sources */,
 				F7FC430D1B8D328C00F6E78D /* ContactsList.xcdatamodeld in Sources */,
 				F7FC430A1B8D328C00F6E78D /* AppDelegate.swift in Sources */,
