@@ -7,6 +7,6 @@
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Contacts" positionX="-45" positionY="0" width="128" height="105"/>
+        <element name="Contacts" positionX="-45" positionY="0" width="128" height="30"/>
     </elements>
 </model>

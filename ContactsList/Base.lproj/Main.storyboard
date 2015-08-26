@@ -7,7 +7,7 @@
         <!--Contacts List-->
         <scene sceneID="M6w-WT-kOJ">
             <objects>
-                <tableViewController id="c5P-ke-Vfs" customClass="ContactsTableViewController" customModule="ContactsList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c5P-ke-Vfs" customClass="ContactsTableViewController" customModule="ContactsList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vXF-xW-3JJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
         <!--Contact Detail View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ContactDetailViewController" customModule="ContactsList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ContactDetailViewController" customModule="ContactsList" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
