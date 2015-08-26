@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-class ContactDetailViewController: UIViewController {
+class ContactDetailViewController: UIViewController,UITextFieldDelegate  {
     
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
@@ -22,6 +22,11 @@ class ContactDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.txtFirstName.delegate = self
+        self.txtLastName.delegate = self
+        self.txtPhone.delegate = self
+        self.txtEmail.delegate = self
         
         if contact != nil {
             setEditMode();
@@ -103,16 +108,11 @@ class ContactDetailViewController: UIViewController {
         managedObjectContext?.save(nil)
     }
     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
-    */
+
+ 
 
 }
